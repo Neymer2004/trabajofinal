@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+</head>
+<style>
+    body{
+        margin: auto;
+    }
+  /*   //imagen */
+  .slider-frame {
+	width: 90%;
+    height: 500px;
+	margin:5px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 200%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 90%;
+   /*  border: solid red; */
+}
+
+.slider-frame img {
+	width: 90%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	50% {margin-left: 0;}
+	
+	55% {margin-left: -100%;}
+	100% {margin-left: -100%;}
+	
+}
+
+
+   /*  stylo del encabezado */
+   .encabezado{
+    width: 100%;
+    height: 85px;
+    display: inline-flex;
+   }
+   .logo{
+    width: 30%;
+    height: 85px;
+    text-align: center;
+   }
+   .titulo{
+    width: 70%;
+    height: 85px;
+    font-size: 50px;
+   }
+  
+  /*  stylo de las opciones */
+   .opciones{
+    width: 100%;
+    height: 35px;
+    background-color: aqua;
+    display: flex;
+   }
+   .boton{
+    display: flex;
+    margin-left: 50px;
+   }
+   .btn{
+    background-color: rgb(99, 127, 184);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   }
+   a:hover{
+    background-color: transparent;
+   }  
+   /* stylo del cuerpo */
+   .cuerpo{
+    width: 100%;
+    height: 200%;
+   }
+   .img{
+    width: 100%;
+    height: 200%;
+    display: flex;
+	padding: 0;
+	
+	animation: slide 3s infinite alternate ease-in-out;
+   }
+   
+  /*  stylo de instrucciones */
+  .instrucciones{
+    width: 90%;
+    height: 30%;
+    text-align: center;
+  }
+  .int{
+    width: 30%;
+    height: 200px;
+  }
+  /*  sytilo del pie de pagina */
+   .pie{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(9, 45, 45);
+    color: white;
+   }
+   .a{
+    color: white;
+    padding: 30px 30px;
+    text-decoration: none;
+   }
+</style>
+<body>
+    <!-- //encabezado// -->
+    <div class="encabezado">
+        <div class="logo">
+            <img src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/computacion.jpg" width="150" height="85">
+        </div>
+        <div class="titulo">
+            IDEX PERU JAPON
+        </div>
+    </div>
+ 
+    <!-- //opciones// -->
+    
+    <div class="opciones">  
+        <a class="btn" href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajo_final/tra_final.html">Inicio</a>
+        <details class="boton">
+            <summary>Nosotros</summary>
+            <a class="btn" href="Nosotros/presentacion.html">Presentacion</a>
+            <a class="btn" href="Nosotros/reseña.html">Reseña Historica</a>
+            <a class="btn" href="Nosotros/Mision-vision.html">Mision y Vision</a>
+        </details>
+        <details class="boton">
+            <summary>Programas de Estudio</summary>
+            <a class="btn" href="programa_estudio/enfermeria.html">Enfermeria Tecnica</a> 
+            <a class="btn" href="programa_estudio/mecanica.html">Mecatronica Automotriz</a>
+            <a class="btn" href="programa_estudio/electronica.html">Electronica Industrial</a>
+            <a class="btn" href="programa_estudio/computacion.html">Computacion E Informatica</a>   
+            <a class="btn" href="programa_estudio/agropecuaria.html">Produccion Agropecuaria</a>  
+            <a class="btn" href="programa_estudio/secretariado.html">Asistencia administrativa</a>
+            <a class="btn" href="programa_estudio/laboratorio.html">Laboratorio Clinico</a>    
+        </details>
+        <details class="boton">
+            <summary>Admision</summary>
+            <a class="btn" href="Admision/proceso.html">Proceso de Matricula</a>
+        </details>
+        <details class="boton">
+            <summary>Otras Paginas</summary>
+            <a class="btn" href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/Calendario.html">Calendario</a>
+            <a class="btn" href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/calc.html">Calculadora</a>
+            <a class="btn" href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/juegos/button.html">Juegos</a>
+            <a class="btn" href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/exm.html">Pagina Neymer</a>
+        </details>
+    </div>
+
+   <!--  //cuerpo -->
+      <div class="cuerpo">
+            <div class="slider-frame">
+                <ul>
+                    <li><img class="img" src="https://www.cetproinnovatec.edu.pe/wp-content/uploads/2020/09/computacion-596x385.jpg" ></li>
+                    <li><img class="img" src="https://isachiclayo.edu.pe/wp-content/uploads/2015/12/Arquitectura-de-plataformas-y-servicios-de-tecnologias-de-la-informacion-2.jpg" ></li>
+                </ul>
+            </div>
+       </div>
+<hr>
+   <!--  //instrucciones -->
+        <pre>
+                     <ol>Ultimos Eventos</ol>
+
+                encuentra las ultimas novedades de nuestra pagiana:
+        </pre>
+   <div class="instrucciones">
+
+    <a href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/calc.html"><img class="int" src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/calculadora.jpg"></a>
+    <a href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/Calendario.html"><img class="int" src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/calendarios.jpg" alt=""></a>
+    <a href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/juegos/culebrita.html"><img class="int" src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/culebrita.jpg" alt=""></a>
+    <a href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/trabajos/exm.html"><img src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/pg_principal.png"class="int"></a>
+    <a href="file:///C:/Users/ONCEAVA%20GEN/Desktop/programacion%20concurrente/juegos/ahorcado.html"><img src="C:\Users\ONCEAVA GEN\Desktop\programacion concurrente/juego_ahorcado.png" class="int"></a>
+    <a href=""><img class="int" src="" ></a>
+    <a href=""><img class="int" src="" ></a>
+    <a href=""><img class="int" src="" ></a>
+
+</div>
+
+
+<!-- //formularios -->
+         <p>
+             <label for="dni">  DNI-----:</label>
+             <input type="text" name="DNI" id="dni" minlength="8" maxlength="8">
+         </p>
+         <p>
+             <label for="telefono" >phone---:</label>
+             <input type="tel" name="telefono" id="telefono" minlength="9" maxlength="9">
+         </p>
+         <p>
+             <label for="email">correo---:</label>
+             <input type="email" name="email" id="email" >
+         </p>
+         <p>
+             <label for="pagina">pag_web:</label>
+             <input type="url" name="pagina" id="pagina" >
+         </p>
+
+
+
+   <!--  //pie de pagina -->
+   <div class="pie">
+        <h3>Encuentranos</h3>
+        <p>Local Principal: Jr. Amazonas N°120 – Chachapoyas</p>
+        <a class="a" href="tel:+938626242">Telefono</a>
+        <a class="a" href="mailto:neymerllaja@gmail.com"></a>
+      
+        <h4>Redes Sociales</h4>
+        <a class="a" href="http://facebook.com">Facebook</a>
+        <a class="a" href="http://youtube.com">Youtube</a>
+    </div>
+
+</body>
+</html>
